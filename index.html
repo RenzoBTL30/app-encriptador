@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+
+    <div id="liveAlertPlaceholder"></div>
+
+    <div class="header">
+        <img src="recursos/Vector.png" alt="" width="60%">
+    </div>
+
+    <div class="main">
+        <div class="caja-texto">
+            <textarea name="texto" id="input-texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+        </div>
+        
+        <div class="caja-texto-encriptado" id="caja-texto-encriptado">
+            <div id="view" hidden>
+                <textarea name="texto" id="texto-encriptado" disabled></textarea>
+            </div>
+            <img id="image" src="recursos/Muñeco.png" alt="" width="40%">
+            <div id="descripcion">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="comandos-encriptador" hidden>
+                <button id="btnCopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra-inferior">
+        <div class="advertencia">
+            <img class="icono-info" src="recursos/icono-info.png" alt="" width="15" height="15">
+            <p class="info">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button id="btnEncriptar" onclick="validarTextoParaEncriptar()">Encriptar</button>
+            <button id="btnDesencriptar" onclick="validarTextoParaDesencriptar()">Desencriptar</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="autor">Creado por Renzo Berrios</p>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+</body>
+</html>
