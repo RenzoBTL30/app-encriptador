@@ -22,6 +22,10 @@ body{
     padding: 0px 30px;
 }
 
+#image{
+    max-width: 200px;
+}
+
 .caja-texto{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -189,6 +193,12 @@ body{
 
     #toast-container > div{
         max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .botones{
+        flex-direction: column;
     }
 }
 
